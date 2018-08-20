@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7a9ce19-b7ca-4dbb-b367-777ba4332090" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/docs.coffee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/docs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/docs_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/docs_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/docs/_form.html.haml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/docs/index.html.haml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/docs/new.html.haml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/docs/show.html.haml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/docs_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/doc.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/doc.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/docs/edit.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/docs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/docs_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/docs/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/docs/show.html.haml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,17 +39,17 @@
       <file leaf-file-name="docs_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/docs_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+            <state relative-caret-position="450">
+              <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.haml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/docs/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+            <state relative-caret-position="30">
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -66,8 +57,17 @@
       <file leaf-file-name="show.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/docs/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="75">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html.haml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/docs/edit.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -86,9 +86,10 @@
         <option value="$PROJECT_DIR$/app/views/docs/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/models/doc.rb" />
         <option value="$PROJECT_DIR$/app/views/docs/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/docs/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/docs_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/docs/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/docs_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/docs/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/docs/edit.html.haml" />
       </list>
     </option>
   </component>
@@ -195,12 +196,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533879768578</updated>
-      <workItem from="1533879770283" duration="6553000" />
+      <workItem from="1533879770283" duration="7066000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6553000" />
+    <option name="totallyTimeSpent" value="7066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1522" y="42" width="1449" height="1396" extended-state="0" />
@@ -286,24 +287,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/docs/show.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/docs/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        <state relative-caret-position="30">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/docs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        <state relative-caret-position="450">
+          <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/docs/index.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/docs/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        <state relative-caret-position="75">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/docs/edit.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
